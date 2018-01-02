@@ -17,7 +17,7 @@ import pandas as pd
 
 output_dict = {}
 
-for root, dirs, files in os.walk("E://gutenberg//1//0//1//4", topdown = False):
+for root, dirs, files in os.walk("E://gutenberg", topdown = False):
     for name in files:
         if name[-4:] == ".txt" and name[-6:] != "-8.txt" and name not in output_dict.keys():
             text_loc = os.path.join(root,name)
